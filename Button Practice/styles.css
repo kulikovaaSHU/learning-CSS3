@@ -66,8 +66,9 @@ body {
 .orange-button {
 	position:relative;
 	display: inline-block;
+	line-height: 30px;
 	border-radius: 4px;
-	font-size: 1.25rem;
+	font-size: 23px;
 	padding: 25px 45px;
 	margin-left: 10px;
 	background: orangered;
@@ -81,6 +82,7 @@ body {
 
 .orange-button:hover {
 	font-size: 30px;
+	line-height: 30px;
 }
 
 .orange-button:active {
@@ -93,6 +95,7 @@ body {
 	border-radius: 4px;
 	font-size: 1.25rem;
 	padding: 25px 45px;
+	left: 5px;
 	background: #73a320;
 	color: white;
 	border: solid 1px #f2f2ff;
@@ -133,4 +136,83 @@ body {
 
 .slide-in-button:active {
 	background-color: #4446c9;
+}
+
+.pattern-button {
+	position: relative;
+	display: inline-block;
+	top: 15px;
+	padding: 25px 45px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #ad3452;
+	border-radius: 4px;
+
+	background-image: url(pinkPattern.png);
+	background-size: 100px 100px;
+	border: solid 1px #84273e;
+	box-shadow: 3px 3px 5px #84273e inset;
+	color: white;
+	text-shadow: 0 1px 0 grey;
+	transition: all ease 0.3s;
+	outline: none;
+}
+
+.pattern-button:hover {
+	animation: pattern-button-animation 4s linear infinite;
+}
+
+@keyframes pattern-button-animation {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 100px 0;
+	}
+}
+
+.pattern-button:active {
+	box-shadow: 8px 8px 15px #772137 inset;
+	text-shadow: 0 2px 0 #84273e;
+}
+
+.pattern-diagonal-button {
+	position: relative;
+	display: inline-block;
+	top: 15px;
+	left: 10px;
+	padding: 25px 45px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #ad3452;
+	border-radius: 4px;
+
+	background-image: url(pinkPattern2.jpg);
+	background-size: 200px 200px;
+	border: solid 1px #763a87;
+	box-shadow: -1px 3px 5px #3f2b44;
+	color: white;
+	text-shadow: 0 1px 0 grey;
+	transition: all ease 0.3s;
+	outline: none;
+}
+
+.pattern-diagonal-button:hover {
+	animation: pattern-diagonal-animation 12s linear infinite;
+}
+
+@keyframes pattern-diagonal-animation {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 200px -200px;
+	}
+}
+
+.pattern-diagonal-button:active {
+	box-shadow: 0px 1px 2px #3f2b44;
+	font-size: 1.3rem;
 }
