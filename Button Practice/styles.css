@@ -268,3 +268,66 @@ body {
 .triangle-appear-button:active::before {
 	border-left: solid 38px #30ba97;
 }
+
+.bent-corner-button {
+	position:relative;
+	display: block;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 25px 45px;
+	margin-top: 20px;
+	background: #236d30;
+	color: white;
+	border: solid 2px #81c12c;
+	text-shadow: 0 1px 0 grey;
+	font-weight: bold;
+	transition: all ease 0.3s;
+	box-shadow: -1px 3px 5px grey;
+	outline: none;
+}
+
+.bent-corner-button::before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 0px;
+	width: 0px;
+	top: 0%;
+	left: 0%;
+	border-bottom:solid 12px #1b4f24;
+	border-left:solid 12px #81c12c;
+	border-top: solid 12px #81c12c;
+	border-right: solid 12px #1b4f24;
+	transition: all ease 0.3s;
+	border-bottom-right-radius: 4px;
+	box-shadow: 0 1px 1px #2f3d2d;
+}
+
+.bent-corner-button:hover {
+	transition: all ease 0.3s;
+	border-color: #81c12c;
+}
+
+.bent-corner-button:hover::before {
+
+	border-bottom:solid 16px #1b4f24;
+	border-left:solid 16px #81c12c;
+	border-top: solid 16px #81c12c;
+	border-right: solid 16px #1b4f24;
+
+
+	transition: all ease 0.3s
+}
+
+.bent-corner-button:active {
+	background-color: #1f602b;
+	border-color: #6fa527;
+	color: #dde8d0;
+}
+
+.bent-corner-button:active::before {
+	border-bottom:solid 20px #1b4f24;
+	border-left:solid 20px #6fa527;
+	border-top: solid 20px #6fa527;
+	border-right: solid 20px #1b4f24;
+}
