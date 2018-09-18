@@ -27,14 +27,15 @@ body {
 	position:relative;
 	display: inline-block;
 	border-radius: 4px;
-	font-size: 1rem;
+	font-size: 1.25rem;
 	padding: 25px 45px;
-	box-shadow: inset 0 1px 0 0 grey;
 	background: black;
 	color: white;
 	border: solid 1px grey;
 	text-shadow: 0 1px 0 grey;
 	font-weight: bold;
+	transition: all ease 0.3s;
+
 }
 
 .monochrome-button::after {
@@ -54,8 +55,82 @@ body {
 }
 
 .monochrome-button:hover::after {
-	right: 2em;
+	right: 1em;
+	left: 8em;
 	opacity: 1;
 	color: white;
 	text-shadow: 0 1px 0 grey;
+	transition: all ease 0.3s
+}
+
+.orange-button {
+	position:relative;
+	display: inline-block;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 25px 45px;
+	margin-left: 10px;
+	background: orangered;
+	color: white;
+	border: solid 1px #c14101;
+	text-shadow: 0 1px 0 #c14101;
+	font-weight: bold;
+	transition: all ease 0.3s;
+
+}
+
+.orange-button:hover {
+	font-size: 30px;
+}
+
+.orange-button:active {
+	font-size: 27px;
+}
+
+.slide-in-button {
+	position:relative;
+	display: inline-block;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 25px 45px;
+	background: #73a320;
+	color: white;
+	border: solid 1px #f2f2ff;
+	text-shadow: 0 1px 0 #3b3c77;
+	font-weight: bold;
+	transition: all ease 0.3s;
+	outline: none;
+}
+
+.slide-in-button::after {
+	position: absolute;
+	top: 34%;
+	left: 72%;
+	right: 0.6em;
+	content: "Hello!";
+	transition: all ease 0.3s
+	opacity: 0;
+	color: transparent;
+	text-shadow: none;
+}
+
+.slide-in-button:hover {
+	padding: 25px 65px 25px 25px;
+	color: transparent;
+	text-shadow: none;
+	background-color: #5154ef; 
+	border: solid 1px grey;
+}
+
+.slide-in-button:hover::after {
+	right: 1em;
+	left: 1em;
+	opacity: 1;
+	color: white;
+	text-shadow: 0 1px 0 grey;
+	transition: all ease 0.3s
+}
+
+.slide-in-button:active {
+	background-color: #4446c9;
 }
